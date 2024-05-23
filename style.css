@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: var(--primary-font);
+}
+
+:root{
+    --primary-color:#fabb00;
+    --secondary-color:#fade69;
+    --tertiary-color:whitesmoke;
+    --quarternary-color: rgb(31, 52, 52);
+    --quinary-color: rgb(187,192,192);
+
+    --primary-font:verdana;
+    --logo-font:'Roboto Slab', monospace;
+}
+header{
+    background-color: var(--tertiary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin-top: 15px;
+}
+.container-texto-logo-sorriziho-para-voces{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right:5px;
+    background-color: var(--primary-color);
+}
+.container-texto-logo-sorriziho-para-voces:hover, .container-texto-logo-sorriziho-para-voces:focus{
+    text-decoration: none;
+}
+.container-texto-logo-sorriziho-para-voces h2{
+    font-family: var(--logo-font);
+    font-weight: 600;
+    color:var(--quarternary-color);
+}
+header nav{
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    border-left: var(--quinary-color) 1px solid;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+}
+header nav a:last-child{
+    border-right: var(--quinary-color) 1px solid;
+}
+a{
+    color:var(--quarternary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover, a:focus{
+    text-decoration: underline;
+}
