@@ -187,11 +187,18 @@ main{
     min-width: 100%;
 }
 .carousell-element:first-child{
-    animation: carousell-scroll 5s ease-in-out infinite;
+    animation: carousell-scroll 15s ease-in-out infinite;
 }
 @keyframes carousell-scroll {
     0%{margin-left:0vw}
-    45%{margin-left:0vw}
-    50%{margin-left:-100vw}
-    100%{margin-left:-100vw}
+    18%{margin-left:0vw}
+    20%{margin-left:-100vw}
+    38%{margin-left:-100vw}
+    40%{margin-left:-200vw}
+    58%{margin-left:-200vw}
+    60%{margin-left:-300vw}
+    78%{margin-left:-300vw}
+    80%{margin-left:-400vw}
+    98%{margin-left:-400vw}
+    100%{margin-left:-500vw}
 }
