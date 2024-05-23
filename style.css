@@ -64,6 +64,9 @@ header nav a{
 header nav a:last-child{
     border-right: var(--quinary-color) 1px solid;
 }
+header a:hover:not(.container-texto-logo-sorriziho-para-voces), header a:focus:not(.container-texto-logo-sorriziho-para-voces){
+    background-color: var(--quinary-color);
+}
 a{
     color:var(--quarternary-color);
     text-decoration: none;
