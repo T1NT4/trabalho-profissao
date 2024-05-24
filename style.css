@@ -171,6 +171,7 @@ main{
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    min-height: 295px;
 }
 .carousell-element{
     min-width: 100vw;
@@ -199,6 +200,6 @@ main{
     60%{margin-left:-300vw}
     78%{margin-left:-300vw}
     80%{margin-left:-400vw}
-    98%{margin-left:-400vw}
-    100%{margin-left:-500vw}
+    99.9999%{margin-left:-400vw}
+    100%{margin-left:0vw}
 }
