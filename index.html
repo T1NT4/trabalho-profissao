@@ -27,7 +27,7 @@
     </header>
     <main>
       <div class="carousell">
-        <div class="carousell-element">
+        <div class="carousell-element" id="first-carousell-element" style="margin-left:0vw;">
           <img src="https://picsum.photos/1500">
         </div>
         <div class="carousell-element">
@@ -43,8 +43,8 @@
           <img src="https://picsum.photos/1500">
         </div>
         <div class="carousell-overlay">
-          <button><</button>
-          <button>></button>
+          <button onclick="carousellLeft()"><</button>
+          <button onclick="carousellRight()">></button>
         </div>
       </div>
     </main>
@@ -66,3 +66,4 @@
     </footer>
   </body>
 </html>
+<script src="Carousell.js"></script>
