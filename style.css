@@ -208,6 +208,7 @@ main{
     box-shadow: 0px 0px 100px -8px black inset;
     display: flex;
     justify-content: space-between;
+    transition: box-shadow 0.25s ease-in;
 }
 .carousell-overlay button{
     opacity: 0;
@@ -227,6 +228,12 @@ main{
 .carousell-overlay:hover button,
 .carousell-overlay:has(button:active) button{
     opacity: 1;
+}
+.carousell-overlay:has(button:hover),
+.carousell-overlay:has(button:focus),
+.carousell-overlay:hover,
+.carousell-overlay:has(button:active){
+    box-shadow: 0px 0px 200px -8px black inset;
 }
 @media (max-width:983px){
     .carousell-overlay button{
