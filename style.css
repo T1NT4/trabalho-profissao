@@ -294,14 +294,10 @@ main{
     border-radius: 100vw;
 }
 /* sessão principal */
-.h1-container{
-    width: fit-content;
-}
 .main-sect h1{
-    background-color: var(--primary-color);
-    padding: 5px;
-    width: fit-content;
     margin-top: 20px;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
 }
 
 /* PÀGINA DE CONTATO */
