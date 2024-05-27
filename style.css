@@ -321,7 +321,9 @@ main{
 /* PÀGINA DE CONTATO */
 textarea{
     resize: none;
-    height: 52px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
 }
 textarea, input[type="text"],input[type="email"]{
     border-radius: 5px;
