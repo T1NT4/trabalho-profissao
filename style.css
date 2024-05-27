@@ -53,6 +53,20 @@ header{
     font-weight: 600;
     color:var(--quarternary-color);
 }
+.container-texto-logo-sorriziho-para-voces h2:first-child{
+    align-self: flex-start;
+}
+.container-texto-logo-sorriziho-para-voces h2:last-child{
+    align-self: flex-end;
+}
+.logo-emoji{
+    width: 10px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-right: 12px;
+    text-shadow: 4px 4px 0 var(--quarternary-color);
+}
 /* barra de navegação */
 header nav{
     padding-right: 10px;
@@ -166,11 +180,14 @@ footer{
     box-shadow: 0px 0px 20px 0px var(--quarternary-color);
     text-align: center;
 }
-footer a{
+a:not(nav a):not(a:visited){
     font-weight: 300;
-    color:indigo;
+    color:#1A0DAB;
 }
-footer a:hover{
+a:not(nav a):visited{
+    color:#681DA8
+}
+a:not(nav a):hover{
     color: var(--quarternary-color)
 }
 .text-container{
@@ -205,6 +222,7 @@ main{
     overflow: hidden;
     position: relative;
     z-index: -1;
+    margin-bottom: 20px;
 }
 .carousell-element{
     min-width: 100vw;
@@ -295,9 +313,9 @@ main{
 }
 /* sessão principal */
 .main-sect h1{
-    margin-top: 20px;
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
+    font-size: 24px !important;
 }
 
 /* PÀGINA DE CONTATO */

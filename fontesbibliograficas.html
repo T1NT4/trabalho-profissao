@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de contato - Gestor Industrial</title>
+    <title>Fontes bibliográficas - Gestor Industrial</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -29,14 +29,19 @@
       </nav>
     </header>
     <main>
-      <form action="#" class="main-sect">
-        <h1>Contate-nós</h1>
-        <label for="mensagem">Sua mensagem</label>
-        <textarea onkeyup="textAreaAdjust(this)" name="mesnagem" placeholder="Sua mensagem aqui" style="height:52px;"></textarea>
-        <label for="email">Seu E-Mail</label>
-        <input type="email" name="email" placeholder="Seu E-Mail">
-        <input type="submit" value="Enviar Comentários">
-      </form>
+      <section class="main-sect">
+        <h1>Ferramentas utilizadas para a criação do site</h1>
+        <p>
+            -HTML <br>
+            -CSS <br>
+            -JavaScript <br>
+            -<a href="https://code.visualstudio.com/">Visual Studio Code</a> <br>
+        </p>
+        <h1>Fontes bibliográficas utilizadas na criação do site</h1>
+        <p>
+            -<a href="https://querobolsa.com.br/carreiras-e-profissoes/gestor-da-producao-industrial">querobolsa.com.br (Utilizado na página principal)</a> <br>      
+        </p>
+      </section>
     </main>
     <footer>
       <div class="text-container">
@@ -56,13 +61,3 @@
     </footer>
   </body>
 </html>
-<script>
-  function textAreaAdjust(element) {
-    element.style.height = "1px";
-    if(element.scrollHeight < 52){
-      element.style.height = "52px";
-    }else{
-      element.style.height = (element.scrollHeight)+"px";
-    }
-  }
-</script>
