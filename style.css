@@ -246,13 +246,13 @@ main{
     justify-content:center !important;
 }
 .align-flex-start{
-    align-items: flex-start;
+    align-items: flex-start !important;
 }
 .align-center{
-    align-items: center;
+    align-items: center !important;
 }
 .align-flex-end{
-    align-items: flex-end;
+    align-items: flex-end !important;
 }
 @media (max-width:983px){
     .carousell-overlay button{
