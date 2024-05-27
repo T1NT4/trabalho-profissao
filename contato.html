@@ -26,33 +26,14 @@
       </nav>
     </header>
     <main>
-      <div class="carousell">
-        <div class="carousell-element" id="first-carousell-element" style="margin-left:0vw;">
-          <img src="https://picsum.photos/1500">
-        </div>
-        <div class="carousell-element justify-flex-end align-center">
-          <img src="img/carousell/desafios-gestor-industrial-producao-software-gestao.webp">
-        </div>
-        <div class="carousell-element">
-          <img src="https://picsum.photos/1502">
-        </div>
-        <div class="carousell-element">
-          <img src="https://picsum.photos/1503">
-        </div>
-        <div class="carousell-element">
-          <img src="https://picsum.photos/1500">
-        </div>
-        <div class="carousell-overlay">
-          <button onclick="carousellLeft()"><</button>
-          <div class="carousell-page-markers">
-            <div class="carousell-page-marker"></div>
-            <div class="carousell-page-marker"></div>
-            <div class="carousell-page-marker"></div>
-            <div class="carousell-page-marker"></div>
-          </div>
-          <button onclick="carousellRight()">></button>
-        </div>
-      </div>
+      <form action="#">
+        <h2>Contate-nós</h2>
+        <label for="mensagem">Sua mensagem</label>
+        <textarea onkeyup="textAreaAdjust(this)" name="mesnagem" placeholder="Sua mensagem aqui"></textarea>
+        <label for="email">Seu E-Mail</label>
+        <input type="email" name="email" placeholder="Seu E-Mail">
+        <input type="submit" value="Enviar Comentários">
+      </form>
     </main>
     <footer>
       <div class="text-container">
@@ -72,4 +53,13 @@
     </footer>
   </body>
 </html>
-<script src="Carousell.js"></script>
+<script>
+  function textAreaAdjust(element) {
+    element.style.height = "1px";
+    if(element.scrollHeight < 52){
+      element.style.height = "52px";
+    }else{
+      element.style.height = (element.scrollHeight)+"px";
+    }
+  }
+</script>
