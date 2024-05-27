@@ -67,6 +67,13 @@ header{
     margin-right: 12px;
     text-shadow: 4px 4px 0 var(--quarternary-color);
 }
+/* fazer o emoji ser certo em mobile */
+@media (pointer:none), (pointer:coarse) {
+    .logo-emoji{
+        scale: -1 1;
+        text-shadow: -4px 4px 0 var(--quarternary-color);
+    }
+}
 /* barra de navegação */
 header nav{
     padding-right: 10px;
@@ -343,6 +350,9 @@ input[type="submit"]{
     box-shadow: 0px 0px 2px 0px var(--quarternary-color) inset;
     font-weight: 600;
     font-size: 15px;
+    width: fit-content;
+    padding: 0 5%;
+    align-self: center;
 }
 input[type="submit"]:hover, input[type="submit"]:focus{
     background-color: color-mix(in srgb, var(--primary-color) 90%, black 10%);
