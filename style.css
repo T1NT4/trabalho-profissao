@@ -339,7 +339,68 @@ main{
     font-size: 24px !important;
 }
 
-/* PÀGINA DE CONTATO */
+/* PÁGINA DE CAMPO DE ATUAÇÃO */
+.entrevista{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    aspect-ratio: 6/1;
+    gap:1rem;
+    margin:10px 0;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.entrevista-fig-container{
+    width: 200px;
+}
+.entrevista-fig{
+    aspect-ratio: 1/1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1000px;
+    background-color: var(--quinary-color);
+}
+.entrevista-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.entrevista-quote{
+    display: flex;
+    flex-grow: 1;
+}
+.entrevista-quote p{
+    width: 100%;
+}
+.reverse .entrevista-content .entrevista-quote{
+    text-align: right;
+}
+.entrevista-info{
+    text-align: center;
+    width: 100%;
+}
+@media (max-width:550px) {
+    .entrevista{
+        aspect-ratio: unset;
+        flex-direction: column;
+    }
+    .entrevista-fig-container{
+        width: 40%;
+        align-self: flex-start;
+    }
+    .reverse .entrevista-fig-container{
+        align-self: flex-end;
+    }
+    .entrevista-quote{
+        width: 80%;
+    }
+    .reverse .entrevista-content .entrevista-quote{
+        margin-left: auto;
+        text-align: right;
+    }
+}
+/* PÁGINA DE CONTATO */
 textarea{
     resize: none;
     overflow: hidden;
