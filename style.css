@@ -33,6 +33,7 @@ body::-webkit-scrollbar{
     position: absolute;
     top: 0;
     background: var(--tertiary-color);
+    box-shadow: inset 30px 0px 26px -30px var(--quinary-color);
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 1000px;
@@ -79,12 +80,10 @@ header{
     margin-right: 12px;
     text-shadow: 4px 4px 0 var(--quarternary-color);
 }
-/* fazer o emoji ser certo em mobile */
-@media (pointer:none), (pointer:coarse) {
-    .logo-emoji{
-        scale: -1 1;
-        text-shadow: -4px 4px 0 var(--quarternary-color);
-    }
+/* fazer o emoji ser certo em android */
+.android{
+    scale: -1 1 !important;
+    text-shadow: -4px 4px 0 var(--quarternary-color) !important;
 }
 /* barra de navegação */
 header nav{
