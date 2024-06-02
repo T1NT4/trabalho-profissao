@@ -80,8 +80,8 @@ header{
     margin-right: 12px;
     text-shadow: 4px 4px 0 var(--quarternary-color);
 }
-/* fazer o emoji ser certo em android */
-.android{
+/* fazer o emoji ser certo em android, ou em iphone */
+.logo-emoji.android, .logo-emoji.iphone{
     scale: -1 1 !important;
     text-shadow: -4px 4px 0 var(--quarternary-color) !important;
 }
