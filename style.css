@@ -372,6 +372,9 @@ main{
 .entrevista-quote p{
     width: 100%;
 }
+.entrevista-quote p b{
+    color:var(--primary-color);
+}
 .reverse .entrevista-content .entrevista-quote{
     text-align: right;
 }
