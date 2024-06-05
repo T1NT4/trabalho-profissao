@@ -207,9 +207,6 @@ a:not(nav a):not(a:visited){
 a:not(nav a):visited{
     color:#681DA8
 }
-a:not(nav a):hover{
-    color: var(--quarternary-color)
-}
 .text-container{
     padding: 10px 0;
 }
@@ -356,6 +353,9 @@ main{
 }
 .entrevista-fig-container{
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap:.5rem;
 }
 .entrevista-fig{
     aspect-ratio: 1/1;
@@ -364,10 +364,14 @@ main{
     border-radius: 1000px;
     background-color: var(--quinary-color);
 }
+.entrevista-fig img{
+    width: 100%;
+    height: 100%;
+}
 .entrevista-content{
     flex-grow: 1;
     display: flex;
-    flex-direction: column;
+    padding-top: 1.5rem;
 }
 .entrevista-quote{
     display: flex;
