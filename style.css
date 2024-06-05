@@ -50,6 +50,7 @@ header{
     width: 100%;
     margin-top: 15px;
     box-shadow: 0px 0px 20px 0px var(--quarternary-color);
+    user-select: none;
 }
 .container-texto-logo-sorriziho-para-voces{
     display: flex;
@@ -243,6 +244,7 @@ main{
     position: relative;
     z-index: -1;
     margin-bottom: 20px;
+    user-select: none;
 }
 .carousell-element{
     min-width: 100vw;
@@ -330,6 +332,8 @@ main{
     background-color: var(--quarternary-color);
     opacity: 0.75;
     border-radius: 100vw;
+    transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), 
+                background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 /* sessão principal */
 .main-sect h1{
