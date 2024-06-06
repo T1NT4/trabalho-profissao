@@ -425,7 +425,26 @@ main{
     text-decoration-color: var(--primary-color);
     font-size: 24px !important;
 }
-
+/* PÁGINA DE SOBRE */
+.salario{
+    display: flex;
+    align-self: center;
+    align-items: baseline;
+}
+.salario h1{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--logo-font);
+    font-size: 65px !important;
+}
+.salario h2{
+    font-family: var(--logo-font);
+    font-size: 32.5px;
+}
+.salario h3{
+    font-family: var(--logo-font);
+    font-size: 16.25px;
+}
 /* PÁGINA DE PROFISSÃO */
 .entrevista{
     display: flex;
@@ -436,7 +455,7 @@ main{
     margin:10px 0;
 }
 .reverse{
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
 }
 .entrevista-fig-container{
     width: 200px;
@@ -506,6 +525,25 @@ ol li, ul li{
 }
 ol li:not(li:last-child), ul li:not(li:last-child){
     margin-bottom: 0.5rem;
+}
+/* PÁGINA DE MATERIAIS UTILIZADOS */
+.produto{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+.produto figure{
+    width: 300px;
+}
+.produto figure img{
+    filter: drop-shadow(-10px 10px 5px var(--quinary-color));
+}
+.produto.reverse figure img{
+    filter: drop-shadow(10px 10px 5px var(--quinary-color));
+}
+.produto.reverse h2{
+    text-align: right;
 }
 /* PÁGINA DE CONTATO */
 textarea{
