@@ -1,5 +1,7 @@
 # trabalho-profissao
 
+-------->>>>ESTE TRABALHO ESTA DISPONIVEL EM https://github.com/t1nt4/trabalho-profissao<<<<--------
+
 Trabalho SENAI, tema foi Profissão. pesquisa extensa e terá que ser apresentado para muitas pessoas, data de entrega 7 de junho
 
 ----documento de referência que o professor postou no classroom----
