@@ -93,9 +93,11 @@ header{
                 font-size var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 /* fazer o emoji ser certo em android, ou em iphone */
-.logo-emoji.android, .logo-emoji.iphone{
-    scale: -1 1 !important;
-    text-shadow: -4px 4px 0 var(--quarternary-color) !important;
+@media only screen and (hover: none) and (pointer: coarse){
+    .logo-emoji{
+        scale: -1 1 !important;
+        text-shadow: -4px 4px 0 var(--quarternary-color) !important;
+    }
 }
 /* barra de navegação */
 header nav{
