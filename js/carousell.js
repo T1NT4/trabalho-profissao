@@ -54,7 +54,7 @@ function updateCarousellMarkers(){
      }
         
     car_markers[margin].style.opacity = 1
-    car_markers[margin].style.backgroundColor = "var(--tertiary-color)"
+    car_markers[margin].style.backgroundColor = "var(--secondary-color)"
 }
 
 updateCarousellMarkers()
