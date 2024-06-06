@@ -17,6 +17,7 @@
 
     --primary-font:verdana;
     --logo-font:'Roboto Slab', monospace;
+    --header-transition-time:0.5s;
 }
 body{
     background-color: var(--tertiary-color);
@@ -57,6 +58,7 @@ header{
     align-items: center;
     padding: 10px 20px;
     margin-right:10px;
+    max-width: 208px;
     background-color: var(--primary-color);
 }
 .container-texto-logo-sorriziho-para-voces:hover, .container-texto-logo-sorriziho-para-voces:focus{
@@ -66,12 +68,17 @@ header{
     font-family: var(--logo-font);
     font-weight: 600;
     color:var(--quarternary-color);
+    transition: opacity var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
+                width var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1);
+    overflow: hidden;
 }
 .container-texto-logo-sorriziho-para-voces h2:first-child{
     align-self: flex-start;
+    width: 73px;
 }
 .container-texto-logo-sorriziho-para-voces h2:last-child{
     align-self: flex-end;
+    width: 113px;
 }
 .logo-emoji{
     width: 10px;
@@ -80,6 +87,9 @@ header{
     justify-content: center;
     margin-right: 12px;
     text-shadow: 4px 4px 0 var(--quarternary-color);
+    transition: margin var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
+                width var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
+                font-size var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 /* fazer o emoji ser certo em android, ou em iphone */
 .logo-emoji.android, .logo-emoji.iphone{
@@ -123,10 +133,11 @@ input[type="checkbox"]{
     font-size:30px;
     user-select: none;
     font-style:normal;
-    transition: rotate 1.5s ease;
     justify-content: center;
     align-items: center;
     padding-right: 25px;
+    transition: font-size var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
+                rotate 0.25s ease-out;
 }
 
 /* barra de navegação responsiva */
@@ -163,7 +174,6 @@ input[type="checkbox"]{
         border-top:1px solid var(--quinary-color)
     }
     .hamburger{
-        transition: rotate 0.25s ease-out;
         transform-origin: 25% 50%;
     }
     .hamburger p{
@@ -188,7 +198,80 @@ input[type="checkbox"]{
         border-top:1px solid var(--quinary-color)
     }
 }
+/* comportamento do header quando voce escrolla pela pagina o suficiente */
+header.scrolled .container-texto-logo-sorriziho-para-voces h2{
+    opacity: 0;
+    width: 0;
+}
+header.scrolled .container-texto-logo-sorriziho-para-voces{
+    min-width: 53px;
+    padding: 10px;
+}
+header.scrolled .logo-emoji{
+    width: 100%;
+    margin: 0;
+    font-size: 35px;
+}
+header.scrolled .hamburger{
+    font-size: 25px;
+}
 
+
+header.scrolled .hamburger{
+    display: flex;
+}
+header.scrolled nav{
+    position: absolute;
+    background-color: var(--tertiary-color);
+    flex-direction: column;
+    padding:0;
+    border:1px solid var(--quinary-color);
+    right:0;
+    top:80%;
+    overflow: hidden;
+    transform: translateX(125%);
+    transition: transform 0.25s ease-out;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 20px -8px var(--quarternary-color);
+}
+header.scrolled:has(input:checked) nav{
+    transform: translateX(0%);
+}
+header.scrolled nav a{
+    width: 100%;
+    border:none;
+    padding:0;
+    padding: 25px 12.5px;
+}
+header.scrolled nav a + a{
+    border:none;
+    border-top:1px solid var(--quinary-color)
+}
+header.scrolled .hamburger{
+    transform-origin: 25% 50%;
+}
+header.scrolled .hamburger p{
+    transition: opacity 0.25s linear;
+    font-family: monospace;
+}
+header.scrolled .hamburger p:last-child{
+    position: absolute;
+    opacity: 0;
+}
+header.scrolled:has(input:checked) .hamburger p:first-child{
+   opacity: 0;
+}
+header.scrolled:has(input:checked) .hamburger p:last-child{
+   opacity: 1;
+}
+header.scrolled:has(input:checked) .hamburger{
+    rotate:360deg;
+ }
+header.scrolled #atuacao{
+    border:none;
+    border-top:1px solid var(--quinary-color)
+}
 /* Rodapé */
 footer{
     margin-top:auto;
@@ -339,7 +422,7 @@ main{
     font-size: 24px !important;
 }
 
-/* PÁGINA DE CAMPO DE ATUAÇÃO */
+/* PÁGINA DE PROFISSÃO */
 .entrevista{
     display: flex;
     flex-direction: row;
@@ -409,6 +492,13 @@ main{
         margin-left: auto;
         text-align: right;
     }
+}
+/* PÁGINA DE CAMPO DE ATUAÇÃO */
+ol li{
+    margin-left: 1.3rem;
+}
+ol li:not(li:last-child){
+    margin-bottom: 0.5rem;
 }
 /* PÁGINA DE CONTATO */
 textarea{
