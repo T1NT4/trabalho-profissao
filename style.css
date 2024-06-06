@@ -498,10 +498,10 @@ main{
     }
 }
 /* PÁGINA DE CAMPO DE ATUAÇÃO */
-ol li{
+ol li, ul li{
     margin-left: 1.3rem;
 }
-ol li:not(li:last-child){
+ol li:not(li:last-child), ul li:not(li:last-child){
     margin-bottom: 0.5rem;
 }
 /* PÁGINA DE CONTATO */
