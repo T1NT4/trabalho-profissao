@@ -5,22 +5,21 @@
     padding:0;
     text-decoration: none;
     font-family: var(--primary-font);
-    color:var(--quarternary-color)
+    color:var(--tertiary-color)
 }
 
 :root{
     --primary-color:#fabb00;
-    --secondary-color:#fade69;
-    --tertiary-color:whitesmoke;
-    --quarternary-color: rgb(31, 52, 52);
-    --quinary-color: rgb(187,192,192);
+    --secondary-color:whitesmoke;
+    --tertiary-color: rgb(31, 52, 52);
+    --quarternary-color: rgb(187,192,192);
 
     --primary-font:verdana;
     --logo-font:'Roboto Slab', monospace;
     --header-transition-time:0.5s;
 }
 body{
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,28 +28,28 @@ body{
 }
 body::-webkit-scrollbar{
     position: absolute;
-    background-color: var(--quarternary-color);
+    background-color: var(--tertiary-color);
     width: 10px;
     position: absolute;
     top: 0;
-    background: var(--tertiary-color);
-    box-shadow: inset 30px 0px 26px -30px var(--quinary-color);
+    background: var(--secondary-color);
+    box-shadow: inset 30px 0px 26px -30px var(--quarternary-color);
 }
 body::-webkit-scrollbar-thumb{
     border-radius: 1000px;
-    background: var(--quinary-color);
+    background: var(--quarternary-color);
 }
 /* TODAS PÀGINAS */
 /* cabeçalho */
 header{
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     margin-top: 15px;
-    box-shadow: 0px 0px 20px 0px var(--quarternary-color);
+    box-shadow: 0px 0px 20px 0px var(--tertiary-color);
     user-select: none;
     transition: margin var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -68,7 +67,7 @@ header{
 .container-texto-logo-sorriziho-para-voces h2{
     font-family: var(--logo-font);
     font-weight: 600;
-    color:var(--quarternary-color);
+    color:var(--tertiary-color);
     transition: opacity var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
                 width var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1);
     overflow: hidden;
@@ -87,7 +86,7 @@ header{
     display: flex;
     justify-content: center;
     margin-right: 12px;
-    text-shadow: 4px 4px 0 var(--quarternary-color);
+    text-shadow: 4px 4px 0 var(--tertiary-color);
     transition: margin var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
                 width var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1),
                 font-size var(--header-transition-time) cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -96,7 +95,7 @@ header{
 @media only screen and (hover: none) and (pointer: coarse){
     .logo-emoji{
         scale: -1 1 !important;
-        text-shadow: -4px 4px 0 var(--quarternary-color) !important;
+        text-shadow: -4px 4px 0 var(--tertiary-color) !important;
     }
 }
 /* barra de navegação */
@@ -106,7 +105,7 @@ header nav{
     align-items: center;
 }
 header nav a{
-    border-left: var(--quinary-color) 1px solid;
+    border-left: var(--quarternary-color) 1px solid;
     height: 100%;
     display: flex;
     align-items: center;
@@ -115,13 +114,13 @@ header nav a{
     text-align: center;
 }
 header nav a:last-child{
-    border-right: var(--quinary-color) 1px solid;
+    border-right: var(--quarternary-color) 1px solid;
 }
 header a:hover:not(.container-texto-logo-sorriziho-para-voces), header a:focus:not(.container-texto-logo-sorriziho-para-voces){
-    background-color: var(--quinary-color);
+    background-color: var(--quarternary-color);
 }
 a{
-    color:var(--quarternary-color);
+    color:var(--tertiary-color);
     text-decoration: none;
     font-weight: 600;
 }
@@ -150,10 +149,10 @@ input[type="checkbox"]{
     }
     header nav{
         position: absolute;
-        background-color: var(--tertiary-color);
+        background-color: var(--secondary-color);
         flex-direction: column;
         padding:0;
-        border:1px solid var(--quinary-color);
+        border:1px solid var(--quarternary-color);
         right:0;
         top:80%;
         overflow: hidden;
@@ -161,7 +160,7 @@ input[type="checkbox"]{
         transition: transform 0.25s ease-out;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        box-shadow: 0px 0px 20px -8px var(--quarternary-color);
+        box-shadow: 0px 0px 20px -8px var(--tertiary-color);
     }
     header:has(input:checked) nav{
         transform: translateX(0%);
@@ -174,7 +173,7 @@ input[type="checkbox"]{
     }
     header nav a + a{
         border:none;
-        border-top:1px solid var(--quinary-color)
+        border-top:1px solid var(--quarternary-color)
     }
     .hamburger{
         transform-origin: 25% 50%;
@@ -198,7 +197,7 @@ input[type="checkbox"]{
      }
     #atuacao{
         border:none;
-        border-top:1px solid var(--quinary-color)
+        border-top:1px solid var(--quarternary-color)
     }
 }
 /* comportamento do header quando voce escrolla pela pagina o suficiente */
@@ -228,10 +227,10 @@ header.scrolled .hamburger{
 }
 header.scrolled nav{
     position: absolute;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     flex-direction: column;
     padding:0;
-    border:1px solid var(--quinary-color);
+    border:1px solid var(--quarternary-color);
     right:0;
     top:80%;
     overflow: hidden;
@@ -239,7 +238,7 @@ header.scrolled nav{
     transition: transform 0.25s ease-out;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    box-shadow: 0px 0px 20px -8px var(--quarternary-color);
+    box-shadow: 0px 0px 20px -8px var(--tertiary-color);
 }
 header.scrolled:has(input:checked) nav{
     transform: translateX(0%);
@@ -252,7 +251,7 @@ header.scrolled nav a{
 }
 header.scrolled nav a + a{
     border:none;
-    border-top:1px solid var(--quinary-color)
+    border-top:1px solid var(--quarternary-color)
 }
 header.scrolled .hamburger{
     transform-origin: 25% 50%;
@@ -276,7 +275,7 @@ header.scrolled:has(input:checked) .hamburger{
  }
 header.scrolled #atuacao{
     border:none;
-    border-top:1px solid var(--quinary-color)
+    border-top:1px solid var(--quarternary-color)
 }
 /* Rodapé */
 footer{
@@ -284,8 +283,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--tertiary-color);
-    box-shadow: 0px 0px 20px 0px var(--quarternary-color);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 20px 0px var(--tertiary-color);
     text-align: center;
 }
 
@@ -323,7 +322,7 @@ main{
     min-width: 100%;
 }
 .carousell{
-    background-color: var(--quinary-color);
+    background-color: var(--quarternary-color);
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -362,7 +361,7 @@ main{
     font-size: 3rem;
     font-weight: 500;
     font-family: var(--logo-font);
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     appearance: none;
     border: 0;
     background: transparent;
@@ -415,7 +414,7 @@ main{
 .carousell-page-marker{
     width: 40px;
     height: 10px;
-    background-color: var(--quarternary-color);
+    background-color: var(--tertiary-color);
     opacity: 0.75;
     border-radius: 100vw;
     transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), 
@@ -471,7 +470,7 @@ main{
     width: 100%;
     overflow: hidden;
     border-radius: 1000px;
-    background-color: var(--quinary-color);
+    background-color: var(--quarternary-color);
 }
 figure img{
     width: 100%;
@@ -540,10 +539,10 @@ ol li:not(li:last-child), ul li:not(li:last-child){
     width: 300px;
 }
 .produto figure img{
-    filter: drop-shadow(-10px 10px 5px var(--quinary-color));
+    filter: drop-shadow(-10px 10px 5px var(--quarternary-color));
 }
 .produto.reverse figure img{
-    filter: drop-shadow(10px 10px 5px var(--quinary-color));
+    filter: drop-shadow(10px 10px 5px var(--quarternary-color));
 }
 .produto.reverse h2{
     text-align: right;
@@ -561,8 +560,8 @@ textarea, input[type="text"],input[type="email"]{
     padding: 1px 5px;
     border: none;
     appearance: none;
-    background-color: var(--tertiary-color);
-    box-shadow: 0px 0px 3px 0px var(--quarternary-color) inset;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 0px 3px 0px var(--tertiary-color) inset;
 }
 input[type="submit"]{
     border-radius: 5px;
@@ -576,15 +575,15 @@ input[type="submit"]{
     padding: 0 5%;
     align-self: center;
     cursor: pointer;
-    box-shadow: 0px 5px 0px 0px var(--quarternary-color);
+    box-shadow: 0px 5px 0px 0px var(--tertiary-color);
 }
 input[type="submit"]:hover, input[type="submit"]:focus{
     transform: translateY(2px);
-    box-shadow: 0px 3px 0px 0px var(--quarternary-color);
+    box-shadow: 0px 3px 0px 0px var(--tertiary-color);
 }
 input[type="submit"]:active{
     transform: translateY(5px);
-    box-shadow: 0px 0px 0px 0px var(--quarternary-color);
+    box-shadow: 0px 0px 0px 0px var(--tertiary-color);
 }
 .rede-social-container{
     display: flex;
