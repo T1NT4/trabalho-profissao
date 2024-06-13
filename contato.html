@@ -29,7 +29,7 @@
       </nav>
     </header>
     <main>
-      <form action="#" class="main-sect">
+      <form action="processsa_feedback.php" class="main-sect" method="POST">
         <h1>Nossas redes sociais</h1>
         <div class="rede-social-container">
           <a href="https://t1nt4.itch.io" class="rede-social" style="mask-image: url(img/redesocial/itchio.png);"></a>
@@ -40,12 +40,12 @@
           <a href="https://facebook.com" class="rede-social" style="mask-image:url(img/redesocial/facebook.png);"></a>
         </div>
         <h1>Feedback</h1>
-        <label for="email">Seu Nome</label>
-        <input type="email" name="nome" placeholder="Seu Nome inteiro aqui">
+        <label for="nome">Seu Nome</label>
+        <input type="text" name="nome" placeholder="Seu Nome inteiro aqui" required>
         <label for="email">Seu E-Mail</label>
-        <input type="email" name="email" placeholder="Seu E-Mail aqui">
-        <label for="mensagem">Sua mensagem</label>
-        <textarea onkeyup="textAreaAdjust(this)" name="mesnagem" placeholder="Sua mensagem aqui" style="height:52px;"></textarea>
+        <input type="email" name="email" placeholder="Seu E-Mail aqui" required>
+        <label for="feedback">Sua mensagem</label>
+        <textarea onkeyup="textAreaAdjust(this)" name="feedback" placeholder="Sua mensagem aqui" required style="height:52px;"></textarea>
         <input type="submit" value="Enviar Comentários">
       </form>
     </main>
